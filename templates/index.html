@@ -3,10 +3,13 @@
 
 <head>
     <title>Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
 </head>
 
 <body>
+    <div>
+        <h3 style="text-align: center">Appartment Information</h3>
+    </div>
     <form id="container" action="/result" method="POST">
 
         <div id="bedroom">
@@ -73,7 +76,7 @@
             <label>Has Gym (0 or 1)</label>
             <input type="text" name="gym" />
         </div>
-        <input type="submit" value="Submit">
+        <button type="submit">Predict Rent</button>
     </form>
 </body>
 

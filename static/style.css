@@ -1,5 +1,5 @@
 body{
-
+    background: linear-gradient(to right, #00b4db, #0083b0);
 }
 form{
     border-radius: 5px;
@@ -26,6 +26,7 @@ button{
     cursor: pointer;
     float: right
 }
+
 input:focus{
     background-color: #ddd;
     outline: none;
