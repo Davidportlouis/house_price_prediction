@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 df = pd.read_csv('./dataset/streeteasy.csv')
 # print(df.shape)
 
-X = df[['bedrooms', 'bathrooms', 'size_sqft', 'min_to_subway', 'floor', 'building_age_yrs', 'no_fee',
+X = df[['bedrooms', 'bathrooms', 'size_sqft', 'min_to_subway', 'floor', 'building_age_yrs',
         'has_roofdeck', 'has_washer_dryer', 'has_doorman', 'has_elevator', 'has_dishwasher', 'has_patio', 'has_gym']]
 # print(X.shape)
 y = df['rent']
@@ -25,7 +25,7 @@ pickle.dump(model, open('model.pkl', 'wb'))
 
 # print(model.coef_)
 
-sample_test = [[1, 1, 620, 16, 1, 98, 1, 0, 1, 0, 0, 1, 1, 0]]
+sample_test = [[1, 1, 620, 16, 1, 98,0, 1, 0, 0, 1, 1, 0]]
 
 print(f"Rent Predicted: {model.predict(sample_test)}")
 

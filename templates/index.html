@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AccuPred</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Welcome to AccuPred</h1>
+    <form id="container" action="/result" method="POST">
+
+        <div id="bedroom">
+            <label>Number Of Bedrooms</label>
+            <input type="text" name="bedroom" />
+        </div>
+
+        <div id="bathroom">
+            <label>Number Of Bathroom</label>
+            <input type="text" name="bathroom" />
+        </div>
+
+        <div id="size">
+            <label>Size (in Squarefeet)</label>
+            <input type="text" name="size" />
+        </div>
+
+        <div id="minimum_time">
+            <label>Minimum Time To Reach Subway (in mins)</label>
+            <input type="text" name="minimum_time" />
+        </div>
+
+        <div id="floor">
+            <label>Number of Floors</label>
+            <input type="text" name="floor" />
+        </div>
+
+        <div id="age">
+            <label>Building Age (in years)</label>
+            <input type="text" name="age" />
+        </div>
+
+        <div id="roofdeck">
+            <label>Has Roofdeck (0 or 1)</label>
+            <input type="text" name="roofdeck" />
+        </div>
+
+        <div id="washerdryer">
+            <label>Has Washer Dryer (0 or 1)</label>
+            <input type="text" name="washerdryer" />
+        </div>
+
+        <div id="doorman">
+            <label>Has Doorman (0 or 1)</label>
+            <input type="text" name="doorman" />
+        </div>
+
+        <div id="elevator">
+            <label>Has Elevator (0 or 1)</label>
+            <input type="text" name="elevator" />
+        </div>
+
+        <div id="dishwasher">
+            <label>Has Dishwasher (0 or 1)</label>
+            <input type="text" name="dishwasher" />
+        </div>
+
+        <div id="patio">
+            <label>Has Patio (0 or 1)</label>
+            <input type="text" name="patio" />
+        </div>
+
+        <div id="gym">
+            <label>Has Gym (0 or 1)</label>
+            <input type="text" name="gym" />
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>

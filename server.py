@@ -14,15 +14,20 @@ def index():
 
 
 def ValuePredictor(to_predict_list):
-    to_predict = np.array(to_predict_list).reshape(1, 14)
+    # to_predict = np.array(to_predict_list).reshape()
+    print(to_predict_list)
     loaded_model = pickle.load(open('model.pkl', 'rb'))
-    result = loaded_model.predict(to_predict)
+    result = loaded_model.predict([to_predict_list])
     return result
 
-@app.route('/result', methods = ['POST'])
+
+@app.route('/result', methods=['POST'])
 def result():
     if request.method == 'POST':
         to_predict_list = request.form.to_dict()
         to_predict_list = list(to_predict_list.values())
+        # print(to_predict_list.values())
+        to_predict_list = list(map(int, to_predict_list))
+        print(to_predict_list)
         result = ValuePredictor(to_predict_list)
     return render_template("result.html", prediction=result)
