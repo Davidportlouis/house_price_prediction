@@ -74,7 +74,7 @@ tensorboard==1.14.0
 tensorflow==1.14.0
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
-Theano==1.0.3+2.g3e47d39ac.dirty
+# Theano==1.0.3+2.g3e47d39ac.dirty
 tornado==6.0.3
 traitlets==4.3.2
 urllib3==1.24.2
