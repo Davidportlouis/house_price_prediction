@@ -42,7 +42,7 @@ mccabe==0.6.1
 mglearn==0.1.7
 mkl-fft
 mkl-random
-mkl-service
+# mkl-service
 nbformat==4.4.0
 numpy==1.16.4
 olefile==0.46
