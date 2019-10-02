@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import accuracy_score
 
 df = pd.read_csv('./dataset/streeteasy.csv')
 # print(df.shape)
@@ -31,6 +32,6 @@ print(f"Rent Predicted: {model.predict(sample_test)}")
 
 plt.scatter(y_test, y_predict)
 plt.plot(range(20000), range(20000))
-plt.xlabel("Actual Rent")
-plt.ylabel("Predicted Rent:")
+plt.xlabel("Predicted Score")
+plt.ylabel("Actual Score")
 plt.show()
