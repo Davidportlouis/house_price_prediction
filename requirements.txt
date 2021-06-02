@@ -77,6 +77,6 @@ termcolor==1.1.0
 # Theano==1.0.3+2.g3e47d39ac.dirty
 tornado==6.0.3
 traitlets==4.3.2
-urllib3==1.24.2
+urllib3==1.26.5
 Werkzeug==0.15.5
 wrapt==1.11.2
