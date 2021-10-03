@@ -18,7 +18,6 @@ for col in df:
         if df['rent'].corr(df[col]) > 0 and df['rent'].corr(df[col]) < 1 :
                 X.append(col)
 
-
 y = df['rent']
 
 # print(X.shape)
